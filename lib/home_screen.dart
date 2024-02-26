@@ -17,7 +17,7 @@ class _EmotionDetctorState extends State<EmotionDetctor> {
   String output = '';
   double percent = 0;
   loadCamera() {
-    cameraController = CameraController(cameres![0], ResolutionPreset.max);
+    cameraController = CameraController(cameres![0], ResolutionPreset.medium);
     cameraController!.initialize().then((value) {
       if (!mounted) {
         return;
